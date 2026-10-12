@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH QUEST | تحديات التقنية</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <span class="brand">TECH <span>QUEST</span></span>
+        <span class="event">ADA LOVELACE DAY</span>
+    </header>
+
+    <main class="container">
+
+        <!-- الصفحة الأولى: البداية -->
+        <section id="home" class="screen active">
+            <div class="hero-icon">⌘</div>
+
+            <p class="eyebrow">THINK • CODE • CREATE</p>
+
+            <h1>تحديات <span>التقنية</span></h1>
+
+            <p class="description">
+                هل تستطيعين اجتياز تحديات التقنية؟
+                اختبري مهاراتك واكتشفي عالم البرمجة والأمن السيبراني!
+            </p>
+
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span>🧠</span>
+                    <p>المنطق</p>
+                </div>
+
+                <div class="challenge-item">
+                    <span>💻</span>
+                    <p>البرمجة</p>
+                </div>
+
+                <div class="challenge-item">
+                    <span>🐛</span>
+                    <p>التصحيح</p>
+                </div>
+
+                <div class="challenge-item">
+                    <span>🔐</span>
+                    <p>الأمن السيبراني</p>
+                </div>
+            </div>
+
+            <button id="startBtn" class="main-button">
+                ابدئي التحدي ←
+            </button>
+
+            <p class="small-note">٤ أسئلة • تجربة ممتعة • اختبري ذكاءك</p>
+        </section>
+
+
+        <!-- الصفحة الثانية: الأسئلة -->
+        <section id="quiz" class="screen">
+
+            <div class="quiz-top">
+                <span id="questionCategory">🧠 المنطق</span>
+                <span id="questionCount">السؤال 1 من 4</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div class="question-card">
+                <p class="eyebrow">TECH CHALLENGE</p>
+                <h2 id="questionText">السؤال يظهر هنا</h2>
+                <p id="questionHint" class="hint"></p>
+
+                <div id="options" class="options"></div>
+
+                <p id="feedback" class="feedback" aria-live="polite"></p>
+
+                <button id="nextBtn" class="main-button" hidden>
+                    السؤال التالي ←
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- الصفحة الثالثة: النتيجة -->
+        <section id="result" class="screen">
+
+            <div class="result-icon">🏆</div>
+
+            <p class="eyebrow">CHALLENGE COMPLETED</p>
+            <h1 id="resultTitle">أحسنتِ!</h1>
+
+            <div class="score-circle">
+                <span id="finalScore">0</span>
+                <small>من 4</small>
+            </div>
+
+            <p id="resultMessage" class="description"></p>
+
+            <button id="restartBtn" class="main-button">
+                أعيدي التحدي ↻
+            </button>
+
+            <p class="small-note">
+                خطوات صغيرة.. أثر كبير 💜
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by Ajwan Al-Qahtani</p>
+        <p>Supervised by Ahad Al-Masoudi</p>
+        <p>ADA LOVELACE DAY • 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
